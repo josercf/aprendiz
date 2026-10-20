@@ -1,0 +1,46 @@
+{
+  "name": "aprendiz",
+  "version": "0.1.0",
+  "description": "Extrai conhecimento dos prompts e alimenta a base Zettelkasten do jose-ops.",
+  "userConfig": {
+    "repoPath": {
+      "type": "string",
+      "title": "Clone do jose-ops",
+      "description": "Caminho do clone local do jose-ops nesta máquina.",
+      "default": "~/Projects/jose-ops"
+    },
+    "sshKeyPath": {
+      "type": "string",
+      "title": "Chave SSH",
+      "description": "Chave que autentica como josercf no GitHub.",
+      "default": "~/.ssh/id_ed25519_josercf"
+    },
+    "modelo": {
+      "type": "string",
+      "title": "Modelo",
+      "description": "Modelo do extrator e do validador.",
+      "default": "haiku"
+    },
+    "perguntaIntervaloMin": {
+      "type": "number",
+      "title": "Intervalo entre perguntas (min)",
+      "description": "Intervalo mínimo entre sugestões de busca.",
+      "default": 30
+    },
+    "commitIntervaloMin": {
+      "type": "number",
+      "title": "Intervalo de commit (min)",
+      "description": "Commit em lote das notas novas.",
+      "default": 5
+    },
+    "pullIntervaloMin": {
+      "type": "number",
+      "title": "Intervalo de pull (min)",
+      "description": "Pull periódico do jose-ops.",
+      "default": 10
+    }
+  },
+  "author": {
+    "name": "José Romualdo"
+  }
+}

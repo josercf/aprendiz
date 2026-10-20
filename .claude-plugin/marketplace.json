@@ -1,0 +1,13 @@
+{
+  "name": "aprendiz",
+  "owner": {
+    "name": "José Romualdo"
+  },
+  "plugins": [
+    {
+      "name": "aprendiz",
+      "source": "./"
+    }
+  ],
+  "description": "Mod aprendiz do José"
+}
